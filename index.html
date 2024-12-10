@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="birthdayCard">
+    <div class="cardFront">
+      <h3 class="happy">HAPPY BIRTHDAY</h3>
+      <div class="balloons">
+        <div class="balloon-1"></div>
+        <div class="balloon-2"></div>
+        <div class="balloon-3"></div>
+        <div class="balloon-4"></div>
+      </div>
+    </div>
+
+
+    <div class="cardInside">
+      <h3 class="back">HAPPY BIRTHDAY</h3>
+      <p>Dear Puja,</p>
+      <p>
+        Wishing you a super special birthday! 🎈
+        I hope your day is filled with laughter, yummy cake, and all the things that make you happy. May this year bring
+        you lots of smiles and success.
+      </p>
+
+      <p class="name">K.K.</p>
+    </div>
+  </div>
+
+
+  <script>
+
+    const birthdayCard = document.querySelector('.birthdayCard');
+    const cardFront = document.querySelector('.cardFront');
+    const happy = document.querySelector('.happy');
+    const cardInside = document.querySelector('.cardInside');
+
+    birthdayCard.addEventListener('click', () => {
+      birthdayCard.classList.toggle('hover_class');
+      cardFront.classList.toggle('cardFront_add_style');
+      happy.classList.toggle('happy_add_style');
+    })
+
+
+
+  </script>
+</body>
+
+</html>
